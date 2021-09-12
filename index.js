@@ -246,4 +246,5 @@ requestAnimationFrame(controller.animation);
 		}
 
 	})
+button.click();
 }
