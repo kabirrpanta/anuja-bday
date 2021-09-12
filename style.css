@@ -1,0 +1,162 @@
+@import url(https://fonts.googleapis.com/css?family=Patua+One);
+* {
+    font-family: 'Patua One', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+.bday__text__2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("./img4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.25;
+}
+
+canvas {
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+html {
+    overflow: auto;
+    background-color: rgba(0, 48, 48, 1.0);
+    background-image: radial-gradient(circle, rgba(0, 96, 96, 1.0), rgba(0, 0, 0, 0.5));
+    width: 100%;
+    height: 100%;
+}
+
+html,
+body {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    margin-top: 25%;
+    font-size: 100px;
+    color: white;
+    text-shadow: 0px 0px 8px white;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    z-index: 10;
+}
+
+h1 {
+    color: white;
+    font-size: 90px;
+    text-shadow: 0px 0px 8px white;
+    justify-content: center;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+    z-index: 10;
+}
+
+#special {
+    font-size: 3em;
+}
+
+.text {
+    letter-spacing: 0.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#special {
+    animation: 3s ease-in 1s infinite reverse both running animate;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: scale(.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn {
+    flex-basis: 0;
+    position: relative;
+    z-index: 10000;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+h1#name {
+    animation: 3s ease-in 1s infinite reverse both running shake;
+}
+
+@keyframes shake {
+    0% {
+        transform: skewX(-15deg);
+    }
+    5% {
+        transform: skewX(15deg);
+    }
+    10% {
+        transform: skewX(-15deg);
+    }
+    15% {
+        transform: skewX(15deg);
+    }
+    /* 20% {
+        transform: skewX(0deg);
+    } */
+    100% {
+        transform: skewX(0deg);
+    }
+}
+
+.footer-heart {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    word-spacing: .5rem;
+    letter-spacing: 0.15rem;
+    width: 100vw;
+    text-align: center;
+    font-family: open sans, sans-serif;
+}
+
+.footer-heart a {
+    border-bottom: 1px solid #2196f3;
+    color: #2196f3;
+    text-decoration: none;
+}
+
+.footer-heart a:hover {
+    color: #453886;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 20%;
+    border-bottom: 0;
+    text-decoration: none;
+}
+
+.emoji {
+    vertical-align: middle;
+}
